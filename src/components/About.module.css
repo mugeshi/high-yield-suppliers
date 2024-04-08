@@ -4,6 +4,7 @@
   width: 100%;
   height: 300px; 
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .heroImage {
@@ -31,7 +32,7 @@
   padding: 10px 20px;
   border-radius: 5px;
   bottom: 10px;
-  opacity: 0; /* Initially hide the content */
+  opacity: 0;
   animation: fadeInContent 1s forwards, moveUp 2s infinite alternate; 
 }
 
@@ -70,5 +71,91 @@
   }
   to {
     transform: translate(-50%, -55%);
+  }
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.card {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 80%; 
+  max-width: 400px; 
+  margin: 0 auto;  
+  opacity: 0;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+
+.vision {
+  border-left: 6px solid #28a745; 
+  animation: fadeInSlideUp 1s forwards, scaleIn 0.8s ease-in-out 0.5s forwards; 
+}
+
+.mission {
+  border-left: 6px solid #28a745; 
+  animation: fadeInSlideRight 1s forwards, scaleIn 0.8s ease-in-out 0.5s forwards;
+}
+
+.workforce {
+  border-left: 6px solid #28a745; 
+  animation: fadeInSlideLeft 1s forwards, scaleIn 0.8s ease-in-out 0.5s forwards; 
+}
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInSlideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInSlideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }

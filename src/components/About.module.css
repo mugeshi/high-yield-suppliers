@@ -76,22 +76,27 @@
 
 .cardContainer {
   display: flex;
-  flex-direction: column;
-  gap: 20px; 
+  flex-wrap: nowrap; /* Prevent wrapping */
+  justify-content: flex-start; /* Align cards to the start of the container */
+  overflow-x: auto; /* Allow horizontal scrolling if cards overflow */
 }
 
 .card {
-  margin-top: 30px;
-  background-color: #fff;
+  background-color: #ddd4d4;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  width: 80%; 
-  max-width: 400px; 
-  margin: 0 auto;  
+  height: 300px; /* Increase the height */
+  width: 40%; /* Set width to a percentage to fit horizontally */
+  max-width: 300px; /* Maximum width of each card */
+  margin-right: 70px; /* Add some spacing between cards */
   opacity: 0;
 }
+
+.card:last-child {
+  margin-right: 0; /* Remove right margin from the last card */
+}
+
 
 .card h3 {
   margin-bottom: 10px;

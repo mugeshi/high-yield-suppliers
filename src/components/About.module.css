@@ -1,3 +1,156 @@
-.about{
-    /* Sample style */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 300px; 
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.active {
+  opacity: 1;
+}
+
+
+.heroContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  bottom: 10px;
+  opacity: 0;
+  animation: fadeInContent 1s forwards, moveUp 2s infinite alternate; 
+}
+
+.heroContent h2 {
+  margin: 0;
+  color: rgba(0, 0, 0, 0);
+  animation: fadeInText 1s forwards; 
+  background-color: rgb(96, 196, 50);
+  padding: 20px 10px ;
+  font-family: 'Arial', sans-serif;
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%); 
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%); 
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    color: rgba(0, 0, 0, 0); 
+  }
+  to {
+    color: rgba(0, 0, 0, 0.8); 
+  }
+}
+
+@keyframes moveUp {
+  from {
+    transform: translate(-50%, -50%);
+  }
+  to {
+    transform: translate(-50%, -55%);
+  }
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start; 
+  overflow-x: auto; 
+}
+
+.card {
+  background-color: #ddd4d4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  width: 40%;
+  max-width: 300px;
+  opacity: 0;
+}
+
+.card:last-child {
+  margin-right: 0; 
+}
+
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+
+.vision {
+  border-left: 6px solid #28a745; 
+  animation: fadeInSlideUp 1s forwards, scaleIn 0.8s ease-in-out 0.5s forwards; 
+}
+
+.mission {
+  border-left: 6px solid #28a745; 
+  animation: fadeInSlideRight 1s forwards, scaleIn 0.8s ease-in-out 0.5s forwards;
+}
+
+.workforce {
+  border-left: 6px solid #28a745; 
+  animation: fadeInSlideLeft 1s forwards, scaleIn 0.8s ease-in-out 0.5s forwards; 
+}
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInSlideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInSlideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

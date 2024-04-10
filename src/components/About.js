@@ -1,5 +1,3 @@
-// About.js
-
 import React, { useState, useEffect } from 'react';
 import styles from './About.module.css';
 
@@ -29,7 +27,7 @@ function About() {
       </div>
       <div className={styles.cardContainer}>
         <div className={`${styles.card} ${styles.vision}`}>
-          <h3>Vision</h3>
+          <div className={styles.circle}><h3>Vision</h3></div>
           <p>
             Honesty and reliability in delivering timely products and services.
             Continually improving the value demand for new and existing clients.
@@ -38,13 +36,13 @@ function About() {
           </p>
         </div>
         <div className={`${styles.card} ${styles.mission}`}>
-          <h3>Mission</h3>
+          <div className={styles.circle}><h3>Mission</h3></div>
           <p>
             To offer our customers a wide range of high-quality products and services at very competitive prices and to maintain the highest standards in customer care, integrity and operational efficiency.
           </p>
         </div>
         <div className={`${styles.card} ${styles.workforce}`}>
-          <h3>Workforce</h3>
+          <div className={styles.circle}><h3>Workforce</h3></div>
           <p>
             We have an energetic team comprising farmers, drivers and sales representatives. We also liaise with other farmers through digital platforms whereby we are able to source products from each other.
           </p>

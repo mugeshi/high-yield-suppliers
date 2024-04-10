@@ -79,6 +79,8 @@
   flex-wrap: nowrap;
   justify-content: flex-start; 
   overflow-x: auto; 
+  gap: 30px;
+  margin-left: 100px;
 }
 
 .card {
@@ -89,7 +91,7 @@
   height: 300px;
   width: 40%;
   max-width: 300px;
-  opacity: 0;
+  
 }
 
 .card:last-child {
@@ -154,3 +156,19 @@
     transform: translateX(0);
   }
 }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #28a745;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0px; 
+}
+
+.circle h3 {
+  color: #fff; 
+}
+

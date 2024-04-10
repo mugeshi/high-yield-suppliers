@@ -76,9 +76,9 @@
 
 .cardContainer {
   display: flex;
-  flex-wrap: nowrap; /* Prevent wrapping */
-  justify-content: flex-start; /* Align cards to the start of the container */
-  overflow-x: auto; /* Allow horizontal scrolling if cards overflow */
+  flex-wrap: nowrap;
+  justify-content: flex-start; 
+  overflow-x: auto; 
 }
 
 .card {
@@ -86,15 +86,14 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 300px; /* Increase the height */
-  width: 40%; /* Set width to a percentage to fit horizontally */
-  max-width: 300px; /* Maximum width of each card */
-  margin-right: 70px; /* Add some spacing between cards */
+  height: 300px;
+  width: 40%;
+  max-width: 300px;
   opacity: 0;
 }
 
 .card:last-child {
-  margin-right: 0; /* Remove right margin from the last card */
+  margin-right: 0; 
 }
 
 

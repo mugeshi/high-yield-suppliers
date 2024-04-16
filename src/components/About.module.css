@@ -115,7 +115,7 @@
 }
 
 .mission {
-  border-left: 6px solid #28a745; 
+  border-left: 6px solid rgb(194, 194, 77); 
   animation: fadeInSlideRight 1s forwards, scaleIn 0.8s ease-in-out 0.5s forwards;
 }
 

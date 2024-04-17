@@ -172,7 +172,7 @@
   color: #fff; 
 }
 
-/* Mobile styles */
+
 @media (max-width: 768px) {
   .hero {
     height: 200px; 
